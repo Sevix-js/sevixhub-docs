@@ -1,51 +1,82 @@
-{\rtf1\ansi\ansicpg949\cocoartf2761
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+/* Reset & 기본 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-\f0\fs24 \cf0 body \{\
-    font-family: Arial, sans-serif;\
-    margin: 0;\
-    padding: 0;\
-    line-height: 1.6;\
-    background-color: #f9f9f9;\
-\}\
-\
-header \{\
-    background-color: #1a1a1a;\
-    color: #fff;\
-    padding: 20px 10%;\
-    text-align: center;\
-\}\
-\
-header h1 \{\
-    margin: 0;\
-\}\
-\
-nav a \{\
-    color: #fff;\
-    text-decoration: none;\
-    margin: 0 10px;\
-\}\
-\
-nav a:hover \{\
-    text-decoration: underline;\
-\}\
-\
-main \{\
-    padding: 20px 10%;\
-    background-color: #fff;\
-    margin: 20px auto;\
-    border-radius: 8px;\
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);\
-\}\
-\
-footer \{\
-    text-align: center;\
-    padding: 15px 0;\
-    background-color: #1a1a1a;\
-    color: #fff;\
-    margin-top: 20px;\
-\}}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 20px;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #0047ab;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* 내비게이션 링크 */
+nav {
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0047ab;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* 컨텐츠 박스 */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+}
+
+/* 버튼 스타일 */
+button {
+    background-color: #0047ab;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #002f7c;
+}
+
+/* 테이블 스타일 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #0047ab;
+    color: #fff;
+}
